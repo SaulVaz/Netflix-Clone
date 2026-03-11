@@ -1,0 +1,21 @@
+# Logs
+*.log
+
+# Dependencies
+node_modules
+dist
+dist-ssr
+*.local
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+
+# OS
+.DS_Store
+
+# Build
+build/
+dist/
