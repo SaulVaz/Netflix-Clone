@@ -3,14 +3,11 @@ const router = express.Router();
 const jwt = require('jsonwebtoken');
 const User = require('../Models/User');
 
-// ═══════════════════════════════════════════════════════════
 // CONFIGURACIÓN Y VALIDACIONES
-// ═══════════════════════════════════════════════════════════
-
 const JWT_SECRET = process.env.JWT_SECRET;
 
 if (!JWT_SECRET) {
-  throw new Error('❌ JWT_SECRET no está definido en las variables de entorno');
+  throw new Error(' JWT_SECRET no está definido en las variables de entorno');
 }
 
 // Validadores
@@ -23,10 +20,7 @@ const isValidPassword = (password) => {
   return password && password.length >= 6;
 };
 
-// ═══════════════════════════════════════════════════════════
 // MIDDLEWARE DE AUTENTICACIÓN
-// ═══════════════════════════════════════════════════════════
-
 const authMiddleware = (req, res, next) => {
   const authHeader = req.headers.authorization;
 
@@ -45,9 +39,7 @@ const authMiddleware = (req, res, next) => {
   }
 };
 
-// ═══════════════════════════════════════════════════════════
 // RUTAS PÚBLICAS
-// ═══════════════════════════════════════════════════════════
 
 // POST - Registro de usuario
 router.post('/users', async (req, res) => {
@@ -140,9 +132,7 @@ router.post('/login', async (req, res) => {
   }
 });
 
-// ═══════════════════════════════════════════════════════════
 // RUTAS PROTEGIDAS (requieren autenticación)
-// ═══════════════════════════════════════════════════════════
 
 // POST - Logout
 router.post('/logout', authMiddleware, (req, res) => {
@@ -224,9 +214,7 @@ router.delete('/users/:id', authMiddleware, async (req, res) => {
   }
 });
 
-// ═══════════════════════════════════════════════════════════
 // RUTAS DE FAVORITOS
-// ═══════════════════════════════════════════════════════════
 
 // GET - Obtener favoritos del usuario
 router.get('/favorites', authMiddleware, async (req, res) => {
