@@ -42,11 +42,11 @@ export default function Login() {
 
       const data = await res.json();
       login(data.token, data.user);
-      setMessage(`✅ Bienvenido ${data.user.name}`);
+      setMessage(` Bienvenido ${data.user.name}`);
       setTimeout(() => navigate('/home'), 1000);
     } catch (err) {
       console.error('Error de conexión:', err);
-      setMessage('❌ Error al conectar con el servidor. Verifica que el backend esté corriendo.');
+      setMessage(' Error al conectar con el servidor. Verifica que el backend esté corriendo.');
     } finally {
       setIsLoading(false);
     }
@@ -58,22 +58,22 @@ export default function Login() {
 
     // Validaciones
     if (!registerName.trim()) {
-      setRegisterMessage('❌ El nombre es requerido');
+      setRegisterMessage(' El nombre es requerido');
       return;
     }
 
     if (!registerEmail.trim()) {
-      setRegisterMessage('❌ El email es requerido');
+      setRegisterMessage(' El email es requerido');
       return;
     }
 
     if (registerPassword.length < 6) {
-      setRegisterMessage('❌ La contraseña debe tener al menos 6 caracteres');
+      setRegisterMessage(' La contraseña debe tener al menos 6 caracteres');
       return;
     }
 
     if (registerPassword !== confirmPassword) {
-      setRegisterMessage('❌ Las contraseñas no coinciden');
+      setRegisterMessage(' Las contraseñas no coinciden');
       return;
     }
 
@@ -93,12 +93,12 @@ export default function Login() {
       const data = await res.json();
 
       if (!res.ok) {
-        setRegisterMessage(`❌ ${data.message || 'Error al crear la cuenta'}`);
+        setRegisterMessage(` ${data.message || 'Error al crear la cuenta'}`);
         return;
       }
 
       // Registro exitoso
-      setRegisterMessage('✅ ¡Cuenta creada exitosamente! Redirigiendo al login...');
+      setRegisterMessage(' ¡Cuenta creada exitosamente! Redirigiendo al login...');
       
       // Limpiar formulario
       setRegisterName('');
@@ -115,7 +115,7 @@ export default function Login() {
       
     } catch (err) {
       console.error('Error de conexión:', err);
-      setRegisterMessage('❌ Error al conectar con el servidor. Verifica que el backend esté corriendo.');
+      setRegisterMessage(' Error al conectar con el servidor. Verifica que el backend esté corriendo.');
     } finally {
       setIsRegistering(false);
     }

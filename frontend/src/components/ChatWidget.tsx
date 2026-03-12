@@ -13,7 +13,7 @@ const ChatWidget: React.FC = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 1,
-      text: "¡Hola! Soy tu asistente inteligente de Netflix. ¿En qué puedo ayudarte hoy? 🎬",
+      text: "¡Hola! Soy tu asistente inteligente de Netflix. ¿En qué puedo ayudarte hoy? ",
       sender: 'bot',
       timestamp: new Date()
     }
