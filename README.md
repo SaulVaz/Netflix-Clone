@@ -1,4 +1,4 @@
-# 🎬 Netflix Clone - MERN Stack
+# Netflix Clone - MERN Stack
 
 Clon de Netflix construido con MongoDB, Express, React y Node.js.
 
@@ -9,19 +9,19 @@ Clon de Netflix construido con MongoDB, Express, React y Node.js.
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Node](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 
-## 🚀 Características
+## Características
 
-- ✅ **Autenticación completa:** Sistema de login y registro con JWT
-- ✅ **Catálogo dinámico:** Películas y series con información detallada
-- ✅ **Sistema de favoritos:** Guarda tu contenido favorito
-- ✅ **Búsqueda en tiempo real:** Encuentra contenido al instante
-- ✅ **Reproductor de trailers:** Visualiza trailers en modal
-- ✅ **Chatbot inteligente:** Asistente para recomendaciones
-- ✅ **Diseño responsive:** Funciona en móviles, tablets y escritorio
-- ✅ **Seguridad:** Contraseñas hasheadas con bcrypt, JWT tokens
-- ✅ **Hero carousel:** Rotación automática de contenido destacado
+-  **Autenticación completa:** Sistema de login y registro con JWT
+-  **Catálogo dinámico:** Películas y series con información detallada
+-  **Sistema de favoritos:** Guarda tu contenido favorito
+-  **Búsqueda en tiempo real:** Encuentra contenido al instante
+-  **Reproductor de trailers:** Visualiza trailers en modal
+-  **Chatbot inteligente:** Asistente para recomendaciones
+-  **Diseño responsive:** Funciona en móviles, tablets y escritorio
+-  **Seguridad:** Contraseñas hasheadas con bcrypt, JWT tokens
+-  **Hero carousel:** Rotación automática de contenido destacado
 
-## 🛠️ Tecnologías
+##  Tecnologías
 
 ### Backend
 - **Node.js** - Entorno de ejecución
@@ -41,7 +41,7 @@ Clon de Netflix construido con MongoDB, Express, React y Node.js.
 - **Vite** - Build tool
 - **Context API** - Gestión de estado
 
-## 📦 Instalación
+##  Instalación
 
 ### Prerrequisitos
 - Node.js (v16 o superior)
@@ -109,7 +109,7 @@ Puedes crear usuarios y contenido de prueba directamente en MongoDB o usar la AP
 - Email: `test@netflix.com`
 - Contraseña: `123456`
 
-## 🎯 Uso
+##  Uso
 
 1. Abre el navegador en `http://localhost:5173`
 2. **Crear cuenta:**
@@ -121,7 +121,7 @@ Puedes crear usuarios y contenido de prueba directamente en MongoDB o usar la AP
    - Contraseña: `123456`
 4. ¡Explora el catálogo, agrega favoritos y disfruta!
 
-## 📁 Estructura del Proyecto
+##  Estructura del Proyecto
 
 ```
 netflix-clone/
@@ -159,18 +159,18 @@ netflix-clone/
     └── package.json
 ```
 
-## 🔐 Seguridad
+##  Seguridad
 
-- ✅ Contraseñas hasheadas con **bcrypt** (salt rounds: 10)
-- ✅ Autenticación con **JWT** (tokens expiran en 7 días)
-- ✅ Variables de entorno para datos sensibles
-- ✅ CORS configurado para permitir solo frontend autorizado
-- ✅ **Helmet.js** para headers de seguridad HTTP
-- ✅ Validación de datos en backend y frontend
-- ✅ Middleware de autenticación en rutas protegidas
-- ✅ Sin contraseñas en respuestas de API
+-  Contraseñas hasheadas con **bcrypt** (salt rounds: 10)
+-  Autenticación con **JWT** (tokens expiran en 7 días)
+-  Variables de entorno para datos sensibles
+-  CORS configurado para permitir solo frontend autorizado
+-  **Helmet.js** para headers de seguridad HTTP
+-  Validación de datos en backend y frontend
+-  Middleware de autenticación en rutas protegidas
+-  Sin contraseñas en respuestas de API
 
-## 🌐 API Endpoints
+##  API Endpoints
 
 ### Públicos (sin autenticación)
 
@@ -193,7 +193,7 @@ PUT    /api/users/:id           # Actualizar usuario
 DELETE /api/users/:id           # Eliminar usuario
 ```
 
-## 🎨 Características de UI/UX
+##  Características de UI/UX
 
 - **Hero Section:** Carousel automático de contenido destacado (rotación cada 10s)
 - **Secciones:** Inicio, Series, Películas, Novedades, Mi Lista
@@ -204,7 +204,7 @@ DELETE /api/users/:id           # Eliminar usuario
 - **Accesibilidad:** ARIA labels, keyboard navigation, screen reader friendly
 - **Responsive:** Mobile-first design con Tailwind CSS
 
-## 🤖 Chatbot
+##  Chatbot
 
 El chatbot incluye:
 - Recomendaciones por género (acción, comedia, drama, terror, romance)
@@ -213,7 +213,7 @@ El chatbot incluye:
 - Soporte de búsqueda y favoritos
 - Respuestas con delay simulado (600-1500ms)
 
-## 📝 Scripts Disponibles
+##  Scripts Disponibles
 
 ### Backend
 ```bash
@@ -228,7 +228,7 @@ npm run build    # Build para producción
 npm run preview  # Preview del build
 ```
 
-## 🚀 Deploy
+##  Deploy
 
 ### Backend (Heroku/Railway/Render)
 
@@ -244,7 +244,7 @@ npm run preview  # Preview del build
 3. Output directory: `dist`
 4. Agrega `VITE_API_URL` apuntando a tu backend desplegado
 
-## 🤝 Contribuir
+##  Contribuir
 
 Las contribuciones son bienvenidas. Por favor:
 
@@ -254,17 +254,17 @@ Las contribuciones son bienvenidas. Por favor:
 4. Push a la rama (`git push origin feature/AmazingFeature`)
 5. Abre un Pull Request
 
-## 📄 Licencia
+##  Licencia
 
 Este proyecto es de código abierto y está disponible bajo la [MIT License](LICENSE).
 
-## 👨‍💻 Autor
+##  Autor
 
 **Tu Nombre**
 - GitHub: [@SaulVaz](https://github.com/tu-usuario)
 - LinkedIn: [Saúl Vázquez](https://www.linkedin.com/in/saul-vazquez-del-rio/)
 
-## 🙏 Agradecimientos
+##  Agradecimientos
 
 - Diseño inspirado en Netflix
 - Icons de Heroicons
@@ -272,7 +272,3 @@ Este proyecto es de código abierto y está disponible bajo la [MIT License](LIC
 - React community por los recursos
 
 ---
-
-⭐ **Si te gustó este proyecto, considera darle una estrella!**
-
-Hecho con ❤️ usando MERN Stack
