@@ -260,7 +260,6 @@ Este proyecto es de código abierto y está disponible bajo la [MIT License](LIC
 
 ##  Autor
 
-**Tu Nombre**
 - GitHub: [@SaulVaz](https://github.com/tu-usuario)
 - LinkedIn: [Saúl Vázquez](https://www.linkedin.com/in/saul-vazquez-del-rio/)
 
